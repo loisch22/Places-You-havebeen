@@ -1,0 +1,11 @@
+@{
+  Layout = "_Layout";
+}
+<h3> You are about to add this place.</h3>
+<p><strong>Place Name:</strong> @Model.GetPlaceName()</p>
+<p><strong>From:</strong> @Model.GetFrom()</p>
+<p><strong>To:</strong> @Model.GetTo()</p>
+<p><strong>Diary:</strong> @Model.GetDescription()</p>
+<p><strong>Rating:</strong> @Model.GetRating()</p>
+<a href="/"><button class="btn btn-lg btn-success">Home</button></a>
+<a href="/add"><button class="btn btn-lg btn-primary">Add more place</button></a>

@@ -1,0 +1,29 @@
+
+@{
+  Layout = "_Layout";
+}
+
+<h2> Add a place</h2>
+<form action="/addedPlace" method="post">
+  <div class="from-group">
+    <label for="placeName"> Place Name</label>
+    <input type="text" name="place-name" class="form-control">
+  </div>
+  <div class="from-group">
+    <label for="from"> From</label>
+    <input type="date" name="from" class="form-control">
+  </div><div class="from-group">
+    <label for="to"> To</label>
+    <input type="date" name="to" class="form-control">
+  </div><div class="from-group">
+    <label for="diary"> Diary</label>
+    <input type="text" name="diary" class="form-control">
+  </div><div class="from-group">
+    <label for="rating"> Rating</label>
+    <input type="number" name="rating" min="1" max="5" class="form-control">
+  </div>
+  <button type="submit" class="btn btn-lg btn-primary"> Add Place</button>
+    <hr>
+</form>
+<a href="/"><button class="btn btn-lg btn-primary">Home</button></a>
+  @* <h2> <a href="/Car/Add">Add more car</a> *@

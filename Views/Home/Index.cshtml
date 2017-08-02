@@ -1,0 +1,18 @@
+@{
+  Layout = "_Layout";
+}
+<h1>Places you have been</h1>
+
+<h2>We know what you did last summer ...</h2>
+
+@foreach(var place in Model)
+{
+  <p><strong>Place Name:</strong> @place.GetPlaceName()</p>
+  <p><strong>From:</strong> @place.GetFrom()</p>
+  <p><strong>To:</strong> @place.GetTo()</p>
+  <p><strong>Diary:</strong> @place.GetDescription()</p>
+  <p><strong>Rating:</strong> @place.GetRating()</p>
+  <hr>
+}
+
+<a href="/add"><button class="btn btn-lg btn-primary">Add place</button> </a>
